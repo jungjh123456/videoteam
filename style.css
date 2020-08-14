@@ -1,5 +1,6 @@
 @import url(normalize.css);
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 *,
 *::before,
 *::after {
@@ -71,4 +72,139 @@ figure {
 }
 body {
   overflow-x: hidden;
+}
+
+/* Footer styling */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.footer-menu {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.footer-menu ul {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.footer-menu li {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.footer-menu li a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.footer-menu li a::after {
+  content: '〉';
+  top: 0;
+  right: -3px;
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.SNS {
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  transform: scale(1.8);
+}
+
+.SNS li {
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.SNS li a {
+  display: block;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.point {
+  font-size: 2rem;
+}
+
+.point p {
+  display: block;
+}
+
+.point a {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.point a::after {
+  content: '〉';
+  top: 0;
+  right: -3px;
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.footer-info > p {
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+.footer-info > ul > li {
+  display: inline-block;
+}
+
+.footer-info > ul > li::after {
+  content: 'l';
+  padding: 10px;
+}
+.footer-info > ul > li:last-child::after {
+  content: '';
+  padding: 0;
+}
+
+.footer-info > span {
+  display: block;
+  width: 200px;
+  height: 55px;
+  margin: 20px auto;
+  line-height: 55px;
+  letter-spacing: 10px;
+  font-size: 4rem;
+  font-family: 'Suez One', serif;
+}
+
+.top-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 55px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: transparent;
+}
+
+.top-button::after {
+  content: '〈';
+  transform: translateX(10px) rotate(90deg);
+  color: inherit;
+  display: inline-block;
 }
