@@ -1,8 +1,18 @@
+let inner = document.querySelector('.inner');
+
 window.addEventListener('scroll', function(){
-  let inner = document.querySelector('.inner');
   console.log(inner);
-  inner.classList.toggle('.isBack');
-  if(window.screenTop === 0){
-  inner.classList.remove('.isBack');
+  let target = inner.getBoundingClientRect;
+  console.log(target);
+  let relativeTop = target.top;
+  console.log(relativeTop)
+  const ScrollTop = window.pageYOffset;
+  console.log(ScrollTop);
+
+  if(ScrollTop > 0){
+    inner.classList.add('isBack');
+  
+  }else if(ScrollTop === 0) {
+    inner.classList.remove('isBack');
   }
   })

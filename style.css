@@ -79,17 +79,19 @@ body {
   position: sticky;
   top: 0;
   }
-  .header .inner {
+
+.header .inner {
   display: flex;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  
   width: 100%;
   }
   .header .inner.isBack {
-  background-color: #000;
-  color: #eee;
+    
+   background-color: #000;
+   color: #eee;
   }
   .menu-list {
   display: flex;
