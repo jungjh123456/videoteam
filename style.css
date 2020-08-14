@@ -11,7 +11,7 @@ html {
 body {
   font-size: 1.4rem;
   color: #181818;
-  font-family: 'Noto Sans KR', sans-serif; /* Noto Sans KR 웹폰트 링크 연결 */
+  font-family: "Noto Sans KR", sans-serif; /* Noto Sans KR 웹폰트 링크 연결 */
   font-weight: 400;
 }
 /* 숨김 콘텐츠 */
@@ -28,7 +28,7 @@ legend {
 }
 /* clearfix */
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: block;
 }
@@ -75,12 +75,11 @@ body {
   background-color: #eee;
 }
 
-
 /*header*/
 .header {
   position: sticky;
   top: 0;
-  }
+}
 
 .header .inner {
   display: flex;
@@ -89,98 +88,90 @@ body {
   align-items: center;
   transition: 2s;
   width: 100%;
-  } 
-  .header .inner.isBack {
-    
-   background-color: #000;
-   color: #eee;
-  }
-  .menu-list {
+}
+.header .inner.isBack {
+  background-color: #000;
+  color: #eee;
+}
+.menu-list {
   display: flex;
-  }
-  .menu-list li {
-    text-align: left;
-   
-    }
-    .menu-list a {
-    display: block;
-    text-align: left;
-    /* border: 1px solid; */
-    justify-content: flex-start;
-    padding: 10px 15px;
-    margin-right: 10px;
-    position: relative;
-    }
-    .menu-list li:hover {
-    border-bottom: 2px solid #aaa;
-    }
-    .menu-list a::before {
-    content: "";
-    width: 12px;
-    height: 10px;
-    top: 60%;
-    transform: translateY(-50%);
-    right: -5px;
-    background-image: url('./images/arrow.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    
-   }
-    
-  .img {
+}
+.menu-list li {
+  text-align: left;
+}
+.menu-list a {
+  display: block;
+  text-align: left;
+  /* border: 1px solid; */
+  justify-content: flex-start;
+  padding: 10px 15px;
+  margin-right: 10px;
+  position: relative;
+}
+.menu-list li:hover {
+  border-bottom: 2px solid #aaa;
+}
+.menu-list a::before {
+  content: "";
+  width: 12px;
+  height: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+  right: -5px;
+  background-image: url("./images/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.img {
   width: 70px;
   height: 70px;
-  }
-  .user-list {
+}
+.user-list {
   display: flex;
-  }
-  .user-list a {
+}
+.user-list a {
   display: block;
   padding: 10px 20px;
-  }
-  .user-list a:hover {
+}
+.user-list a:hover {
   border-bottom: 2px solid #aaa;
-  }
-  
+}
 
-  /*section*/
+/*section*/
 
-  .section {
-    display: flex;
-    /* overflow: hidden; */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateY(100%);
-    transition: 2s;
-  }
+.section {
+  display: flex;
+  /* overflow: hidden; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: 2s;
+}
 
-  .section .section__list {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .section__list li {
+.section .section__list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.section__list li {
+  width: 100%;
+  color: #1c6bba;
+}
+.section__list a {
+  display: block;
+  padding: 35px 0;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-right: none;
+}
+.section__list li:last-child a {
+  border-right: 1px solid #aaa;
+}
 
-    width: 100%;
-    color: #1c6bba;
-    
-  }
-  .section__list a {
-    display: block;
-    padding: 35px 0;
-    text-align: center;
-    border: 1px solid #aaa;
-    border-right: none;
-  }
-  .section__list li:last-child a {
-    border-right: 1px solid #aaa;
-  }
-
-
-
-  .section.setBottom {
-    transform: translateY(0%);
-  }
+.section.setBottom {
+  transform: translateY(0%);
+}
