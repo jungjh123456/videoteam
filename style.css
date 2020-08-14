@@ -1,0 +1,74 @@
+@import url(normalize.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.4rem;
+  color: #181818;
+  font-family: 'Noto Sans KR', sans-serif; /* Noto Sans KR 웹폰트 링크 연결 */
+  font-weight: 400;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden,
+legend {
+  position: absolute; /*레이어함*/
+  width: 1px;
+  height: 1px;
+  overflow: hidden; /*넘치는 것 감추기*/
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+/* clearfix */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+/* header 초기화 */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+/*ul 초기화 */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 앵커 태그 초기화 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 버튼 초기화 */
+button {
+  border: 0;
+}
+/* dl, dd 초기화 */
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+/* fieldset 초기화 */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* figure 초기화 */
+figure {
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
