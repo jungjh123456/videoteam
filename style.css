@@ -72,3 +72,47 @@ figure {
 body {
   overflow-x: hidden;
 }
+
+
+/*header*/
+.header {
+  position: sticky;
+  top: 0;
+  }
+  .header .inner {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  }
+  .header .inner.isBack {
+  background-color: #000;
+  color: #eee;
+  }
+  .menu-list {
+  display: flex;
+  }
+  .menu-list a {
+  display: block;
+  padding: 10px 20px;
+  }
+  .menu-list a:hover {
+  border-bottom: 2px solid #aaa;
+  }
+  .img {
+  width: 70px;
+  height: 70px;
+  }
+  .user-list {
+  display: flex;
+  }
+  .user-list a {
+  display: block;
+  padding: 10px 20px;
+  }
+  .user-list a:hover {
+  border-bottom: 2px solid #aaa;
+  }
+  
