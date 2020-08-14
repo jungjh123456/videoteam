@@ -15,7 +15,7 @@ window.addEventListener('scroll', function(){
     inner.classList.remove('isBack');
     bottombody.classList.remove('setBottom');
   }
-  })
+  }) 
 
 
   // let off = function getDocHeight() {
