@@ -71,10 +71,7 @@ figure {
 }
 body {
   overflow-x: hidden;
-
-  background-color: #eee;
 }
-
 /*header*/
 .header {
   position: sticky;
@@ -123,7 +120,13 @@ body {
   background-size: contain;
   position: absolute;
 }
-
+.menu-list a {
+  display: block;
+  padding: 10px 20px;
+}
+.menu-list a:hover {
+  border-bottom: 2px solid #aaa;
+}
 .img {
   width: 70px;
   height: 70px;
@@ -150,6 +153,7 @@ body {
   right: 0;
   transform: translateY(100%);
   transition: 2s;
+  background-color: #fff;
 }
 
 .section .section__list {
@@ -174,4 +178,84 @@ body {
 
 .section.setBottom {
   transform: translateY(0%);
+}
+
+/* 메인 */
+.main {
+  background-color: lightgray;
+}
+
+/* 회사 소개 */
+.introduce {
+  background-color: yellow;
+  background-image: url(./images/sup00164_1921.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  padding-left: 50px;
+}
+.introduce__company {
+  color: #fff;
+  padding-top: 200px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.introduce__company dt {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+.introduce__company dd {
+  font-size: 1.2em;
+}
+.btn__link1,
+.btn__link2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  transition: all 500ms;
+  position: relative;
+  padding-right: 10px;
+}
+.btn__link1::after {
+  content: ">";
+  position: absolute;
+  right: 25px;
+  font-weight: 700;
+}
+.btn__link2::after {
+  content: ">";
+  position: absolute;
+  right: 15px;
+  font-weight: 700;
+  transition: all 300ms;
+}
+.btn__link1:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btn__link1:hover::after,
+.btn__link2:hover::after {
+  transform: translateX(3px);
+}
+.btn__link1 {
+  float: left;
+}
+.btn__link2 {
+  float: left;
+  border: 0;
+}
+
+/* 새 상품 */
+.introduce__list .newArrival {
+  background-color: pink;
+}
+.thi_part {
+  background-color: tomato;
 }
